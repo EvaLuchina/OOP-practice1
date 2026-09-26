@@ -25,16 +25,3 @@ classDiagram
     Game --> Player : creates
     Player --> UI : uses
 ```
-
-
-## 1. Есть ли у вас наследование
-Нет
-
-## 2. Есть ли композиция? Что чем владеет?
-Композиция есть. Game создаёт Player
-Game владеет secret_number, max_attempts, ui
-Player владеет attempts, ui
-UI не владеет ничем
-
-## 3. Есть ли циклические зависимости?
-Нет
