@@ -26,7 +26,7 @@ class Game:
         self._ui.show_message(
             f"Я загадал число от 1 до 100. У вас {self._max_attempts} попыток. Удачи!"
         )
-        player = Player("Игрок", self._ui)
+        player = Player(self._ui)
         while player.attempts < self._max_attempts:
             guess = player.make_guess()
             player.count_attempts()
